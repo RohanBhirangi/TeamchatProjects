@@ -1,0 +1,30 @@
+/*custom scrollbar*/
+
+*::-webkit-scrollbar {
+  background: rgba(0, 0, 0, 0);
+  width: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #BDBDBD;
+}
+
+/*description text*/
+
+.service::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  right: 0;
+}
+
+/*right fixed*/
+.right-fixed {
+  position: absolute;
+  right: 5px;
+}
+
+.right-fixed > * {
+  display: inline-block;
+  vertical-align: middle;
+}
